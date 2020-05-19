@@ -1,0 +1,16 @@
+﻿<Window x:Name="MainWindow1" x:Class="DotNetInspector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DotNetInspector"
+        mc:Ignorable="d"
+        Title="DotNetInspector" Height="450" Width="810" Icon="magnifying-glass-icon-magnifier.jpg" MinWidth="430" MinHeight="330">
+    <Grid Name="MainGrid" Height="400" MinWidth="400" MinHeight="200" Margin="0,0,-3,0" HorizontalAlignment="Left" Width="800" VerticalAlignment="Top" ShowGridLines="True">
+        <Button Name="buttonChooseAssembly"  Content="Choose Assembly" Margin="10,10,0,0" VerticalAlignment="Top" Click="Button_Click" Height="24" HorizontalAlignment="Left" Width="113"/>
+        <Label  Name ="labelFileName"  Content="" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="113" Height="30" Visibility="Visible" Foreground="Lime"/>
+        <ListBox Name="listBoxMain"  Margin="160,0,0,0" Height="390" VerticalAlignment="Top" HorizontalAlignment="Left" Width="630"/>
+        <Button Name="buttonBack" Content="Back" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Width="73" Height="22" Click="ButtonBack_OnClick"/>
+
+    </Grid>
+</Window>
